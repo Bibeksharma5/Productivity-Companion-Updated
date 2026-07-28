@@ -1,204 +1,216 @@
 # Productivity Companion
 
-A practical guide to reading, converting, creating, and managing everyday content.
+A comprehensive guide to reading, converting, editing, and managing everyday digital content.
 
-**Version 3.5.1**
+**Version 4.0.1 — Major Release**
 
----
+## Table of Contents
 
-## Welcome
+- [Getting Started](#getting-started)
+- [Settings & Configurations](#settings--configurations)
+- [Accessible Document Reader](#accessible-document-reader)
+- [AI & Vision Assistants](#ai--vision-assistants)
+- [Audio & Video Editor](#audio--video-editor-new-feature)
+- [Create & Convert Tools](#create--convert-tools)
+- [Productivity & Utilities](#productivity--utilities)
+- [Document Reader Keyboard Shortcuts](#document-reader-keyboard-shortcuts)
+- [Tips & Troubleshooting](#tips--troubleshooting)
 
-Productivity Companion is designed to work well with keyboard navigation and screen readers, including NVDA, JAWS, and Narrator. Use <kbd>Tab</kbd> and <kbd>Shift</kbd>+<kbd>Tab</kbd> to move between controls, <kbd>Enter</kbd> or <kbd>Space</kbd> to activate them, and the Application key (or <kbd>Shift</kbd>+<kbd>F10</kbd>) to open context menus where available.
+> **Keyboard Accessibility Welcome.**
+> Productivity Companion has been built from the ground up to be fully accessible for keyboard navigators and screen readers (NVDA, JAWS, Narrator). Use `Tab` and `Shift+Tab` to move through interface controls, `Enter` or `Space` to execute operations, and the `Application key` (or `Shift+F10`) to trigger contextual menus.
 
-## Contents
+## Getting Started
 
-- [Getting started](#getting-started)
-- [Settings and downloads](#settings-and-downloads)
-- [Checking for updates](#checking-for-updates)
-- [Document Reader](#document-reader)
-- [Image and PDF OCR](#image-and-pdf-ocr)
-- [Create and convert](#create-and-convert)
-- [Productivity tools](#productivity-tools)
-- [Weather and Wikipedia search](#weather-and-wikipedia-search)
-- [Document Reader shortcuts](#document-reader-shortcuts)
-- [Tips and troubleshooting](#tips-and-troubleshooting)
+The main screen presents a clean, list-based catalog of all 24 tools. Scroll or press arrow keys to highlight a tool, and press `Enter` to launch it.
 
----
+**Customizing features order:** You can reorganize the tools on your main home screen to match your workflow. Highlight any tool in the list, trigger the context menu (`Application key`, `Shift+F10`, or right-click), and choose to move it up, down, to the top, or to the bottom of the list. Click **Reset features order** (or press `Alt+R`) to sort them alphabetically.
 
-## Getting started
+**Access Keys:** Controls with underlines in their text, such as **Sett_i_ngs** or **_E_xit**, support quick access keys. Hold `Alt` and press the underlined letter (e.g. `Alt+I` for Settings, `Alt+E` for Exit) to activate them immediately.
 
-The home screen lists every tool. Select a feature and press <kbd>Enter</kbd> to open it. You can reorder the feature list: select an item, open its context menu, and choose to move it up, down, to the top, or to the bottom. Use **Reset feature order** to restore the default order.
+## Settings & Configurations
 
-Buttons with an ampersand in their label, such as **&Back**, have an access key. In most Windows configurations, press <kbd>Alt</kbd> plus the underlined letter to activate them.
-
-The home screen also includes a **Check for update** button. See the [Checking for updates](#checking-for-updates) section for details.
-
-## Settings and downloads
-
-Open **Settings** from the home screen to tailor the application. Select **OK** to save your choices.
+Open the **Settings** dialog from the main screen (`Alt+I`) to configure speech options, audio formats, download files, and clear caches. Press `Tab` to cycle pages or click a tab:
 
 ### General
-Choose the application theme — Light, Dark, or System default — the display language (English or Nepali), and whether to automatically check for updates on startup.
+Select your user interface theme (Light, Dark, or System Default), configure the display language (English or Nepali), and toggle whether the app should automatically check for newer updates on startup.
 
 ### Text to speech
-Select Google Text to Speech or Microsoft Edge voices. Choose a Google language or Edge voice as appropriate, and use **Fetch latest voices** when you need an updated Edge voice list.
+Cycle speech engines between Google TTS and Microsoft Edge. Select speech voices or languages, and click **Fetch latest voices** to refresh Edge natural online voices.
 
 ### Audio transcription
-Select a Whisper model and download it before using Audio Transcriber. Larger models can be more accurate but need more storage and processing time.
+Toggle the Audio Transcriber mode between **Online** (cloud-based fast AI model) and **Offline** (uses local Whisper engine). Download or remove offline Whisper models (Tiny, Base, Small, Medium, Large) from this tab.
 
 ### Recorder
-Set the default recording folder, channel count, and sample rate for Voice Recorder.
+Select default paths for audio recording output. Configure channels (Mono - 1 or Stereo - 2), select sample rates (44100Hz / 48000Hz), and choose default recording formats (**WAV** or **MP3**).
 
 ### Conversion
-Download or remove Pandoc. Pandoc is needed for Word to EPUB and the Markdown/HTML conversion tools.
+Manage **Pandoc** installations. Pandoc is the conversion engine required for Word to EPUB, Markdown to HTML, and HTML to Markdown conversions. Download or remove it in one click.
 
 ### More
-Download additional Tesseract OCR languages and clear the Productivity Companion cache when needed.
+Manage additional languages for Tesseract OCR. Select languages from the list to download them. You can also clear the app cache to free up temporary space.
 
-> **Internet connection:** downloading resources, fetching voices, weather, currency conversion, Wikipedia search, online translation, Google text-to-speech, and checking for updates all require an internet connection.
+## Accessible Document Reader
 
-## Checking for updates
+The Document Reader provides a highly accessible, features-rich workspace for reading, manipulating, and analyzing PDF, DOCX, EPUB, and PPTX (PowerPoint) documents.
 
-Productivity Companion can check whether a newer version is available and download the installer for you.
+### Reading & Navigation
 
-### Manual check
-Select **Check for update** on the home screen. A dialog will appear while the application contacts the update server. If a newer version is found, you will be asked whether to download it. The download dialog shows a progress bar and a **Cancel** button; you may close it at any time.
+- **Import:** Import any supported file using the File menu (`Ctrl+I`). If a file was read previously, you will be prompted to resume reading from your last viewed section.
+- **Reading Modes:** Cycle between **Plain Text** (optimized layout for screen readers) and **Formatted** mode.
+- **Navigating:** Use previous (`Alt+PageUp`) and next (`Alt+PageDown`) buttons to cycle sections, click **Go** (`Ctrl+G`) to jump to a specific section, or open the Table of Contents (`Ctrl+T`) to navigate via headers.
+- **Contrast Options:** Toggle high contrast themes (`Ctrl+H`), inverted colors (`Ctrl+Shift+I`), dark reading layout, and Split View (`Ctrl+Shift+V`).
 
-### Automatic check
-When **Automatically check for updates on startup** is enabled in Settings > General (this is the default), the application silently checks for a newer version each time it starts. If one is found, you will be prompted to download it.
+### Interactive AI Reading Features
 
-### Download and install
-1. Confirm the download when prompted.
-2. Wait for the progress bar to reach 100%.
-3. When the download finishes, the installer launches automatically and the application closes so the installer can run.
-4. Follow the installer instructions to complete the update.
+- **Ask AI Assistant** *(new feature)*: Click the "Ask AI assistant" button to open the AI Chat Frame with the active document pre-loaded. Ask questions, request summaries, or query data directly from the document.
+- **Deep Insight with AI** *(new feature)*: Designed specifically for PDFs. Click "Deep inside with AI" to analyze the current page. The app runs a visual analysis using AI to render a clean, semantic HTML viewport. Highly useful for structured reading of complex tables, visual diagrams (with alt texts), and mathematical equations (rendered as clean, screen-reader accessible **MathML** code).
 
-Cancelling the download removes any partially downloaded file. You can also close the download dialog with <kbd>Alt</kbd>+<kbd>F4</kbd>, which cancels the download.
+### Document library
 
-## Document Reader
+Add any open document to your permanent reading archive by clicking **Add to document library**. On launch, select **Document library** to browse archived docs, manage library listings, and import/export library databases.
 
-Document Reader opens PDF, DOCX, EPUB, and PowerPoint (PPTX) documents. It provides a focused reading space with navigation, search, export, note-taking, read aloud, and document-management tools.
+### PDF Manipulations & Tools
 
-### Open and navigate a document
-1. Open **Document Reader** and choose **Import document**.
-2. Select the file you want to read. If you have previously read it, the reader can offer to resume from your last section.
-3. Use **Previous**, **Next**, the section selector, or **Go** to move through the document.
-4. Choose **Plain Text** or **Formatted** mode to suit the document and your reading preference.
+A suite of native tools under the **Manipulations** and **Tools** menus allows you to alter PDFs (it is recommended to work on copies):
 
-### Read, search, and organise
-- Use **Search** for text in the current section or the full document. The Edit menu also provides Find, Find Next, Find Previous, and Find and Replace where supported.
-- Add bookmarks to return to important sections. Open Bookmarks or Bookmarks Manager to review, rename, delete, or export them.
-- Use **TOC** to navigate by the table of contents or detected headings.
-- Use **Add note** to attach a note to the current section.
-- Use **Read** for read aloud. Playback options let you pause, resume, stop, and change speed.
-- Use the View menu for zoom, high contrast, inverted colours, dark mode, and split view.
+- Lock files with PDF password protection, or decrypt/unlock secure PDFs.
+- Highlight selected text blocks (`Ctrl+Shift+L`) or insert annotations (`Ctrl+Shift+N`).
+- Redact sensitive text, rotate pages, delete sections, or extract section ranges.
+- Extract links from documents, split PDFs into smaller files, export pages as images, or insert page-wide watermarks.
+- Calculate reading statistics (`Ctrl+Shift+S`) and translate section content using online translators (`Ctrl+Shift+T`).
 
-### Document Library
-After opening a document, choose **Add to document library** to save it in your library. From the Document Reader start screen, open **Document library** to browse saved entries, open or remove them, and import or export the library data for backup or transfer.
+## AI & Vision Assistants
 
-### OCR, web viewer, and export
-- **OCR:** Available for PDF files. Choose the current section, all sections, or a section range, then select the recognition language. When using Section range, enter both **From** and **To** before starting.
-- **Web viewer:** Available for EPUB and PPTX. It opens the document in a browser-style reading view with previous, next, and page navigation. PPTX web viewing is experimental.
-- **Export:** Export the current section or all sections in the formats offered by the Export dialog, including text, Word, audiobook, CSV, JSON, and HTML where available.
+Productivity Companion integrates advanced AI models to assist you with chats, online searches, and visual descriptions.
 
-### PDF tools
-PDF-specific tools include password protection and unlocking, text highlighting, annotations, link extraction, redaction, page rotation, deleting or extracting sections, splitting PDFs, extracting images, saving the current section as an image, and adding a watermark. Some operations modify or create files; save a copy first if you need to preserve the original.
+### AI Assistant *(new feature)*
+An accessible chat interface to ask questions, write content, and get coding or reasoning answers. Features a **Web search** toggle: turn it on to search the web for up-to-date real-time online search details.
 
-### More reader tools
-The Tools menu includes text-extraction profiles, section comparison, statistics, translating the current section, voice preview, and reader settings. Availability depends on the open document and installed components.
+### Image Describer *(new feature)*
+Analyze and describe images using AI. Select **Open Image** to import a local image file, or select **Take Picture** to activate a camera framework and take a snapshot via webcam, then query the describer for layout, brightness, texts, and objects list.
 
-## Image and PDF OCR
+### Image Generator *(new feature)*
+Generate beautiful graphics or visual concepts using text prompts. Powered by online AI systems. View a preview inside the app and click save to export the output as PNG, JPG, or BMP files.
 
-### Image OCR
-1. Open **Image OCR** and select an image.
-2. Choose a primary language and, if useful, a secondary language.
-3. Select **Start processing**.
-4. Review the recognised text. Select **Copy** to place it on the clipboard, or **Save detected text** to save it as a UTF-8 `.txt` file in a location you choose.
+## Audio & Video Editor *(new feature)*
 
-For languages not already available, open Settings, switch to the More tab, and choose **Download additional languages for OCR**. OCR quality depends on the source image: sharp, high-contrast images generally give better results.
+A completely keyboard-accessible, screen-reader friendly editor for audio and video files. Select **Open audio or video file** to upload a track and choose from 7 editing tools:
 
-### PDF OCR
-Open the PDF in Document Reader and select **OCR**. Select a scope and the language(s), then start OCR. OCR text is kept with the document reader session and can be viewed through an OCR text-extraction profile.
+### Cut & Trim
+**Cut:** Delete a selected portion of the file, joining the remaining segments together. **Trim:** Crop the file down, keeping only the selected range and deleting everything else.
 
-## Create and convert
+### Split
+Divide the audio or video track at a specific time marker and export the segments as separate files.
 
-### Audio to video converter
-Choose an audio file, optionally add an image, select an aspect ratio and quality, then save the result as a video.
+### Volume & Echo
+**Change Volume:** Boost or lower the volume of the entire track or a custom segment. **Change Echo:** Add or customize echo feedback effects on your audio.
 
-### Video to audio converter
-Convert one video or import several videos for batch conversion. Choose MP3, WAV, or M4A as the output format.
+### Background Music
+Overlay a secondary background audio track onto a video file, with control over background mixing volumes. (Videos only)
 
-### PDF to image converter
-Select a PDF and export its pages as image files to a folder you choose.
+### Add Watermark
+Apply text or image overlays onto your video files at custom positions (top-left, top-right, bottom-left, bottom-right). (Videos only)
 
-### Word to EPUB converter
-Select a Word document and save an EPUB version. Download Pandoc from Settings first if prompted.
+## Create & Convert Tools
 
-### Markdown to HTML / HTML to Markdown
-Open the source file and save the converted document. These converters use Pandoc.
+A collection of batch converters and creators to convert documents, audio/video formats, and images.
 
-### Image resizer
-Open an image, then select Resize and choose where to save the smaller image.
+### Audio to video
+Convert audio files (MP3/WAV/etc.) to video files. Customize output by adding background images, selecting aspect ratios (16:9, 4:3, 1:1), and configuring rendering quality.
 
-### Text to image converter
-Enter text and customise alignment, fonts, colours, background, frame, logo or watermark. Preview before saving the image.
+### Video to audio
+Extract audio streams from videos. Import a single video or select multiple files for batch processing. Output tracks can be saved as MP3, WAV, or M4A.
 
-### Text To Speech converter
-Enter or load text, choose your configured speech engine and voice/language, then generate and save audio.
+### Image to PDF *(new feature)*
+Convert lists of images into a single PDF document. Select multiple image files and use the list context menu to rearrange files (Move up, down, top, bottom) before exporting.
 
-## Productivity tools
+### PDF to image
+Extract and export pages of any PDF document as individual image files inside a folder of your choosing.
 
-### Audio transcriber
-Select an audio file to create a text transcription. Download a Whisper model in Settings before first use. Copy the completed transcription with the copy button.
+### Word to EPUB
+Convert Microsoft Word (DOCX) files to EPUB documents. Requires Pandoc (downloadable from Settings > Conversion).
 
-### Voice recorder
-Choose a folder, start recording, pause or resume as needed, then stop. You can play the saved recording. The app asks for confirmation if you go back while recording is in progress.
+### Markdown & HTML Converters
+Convert Markdown text files to HTML documents, or HTML files to Markdown formatting. Requires Pandoc.
 
-### Notes manager
-Create categories, then add notes within them. Open, edit, or remove notes using the buttons or context menu. Export notes for backup and import a previous export when needed.
+### Image Resizer
+Import an image and quickly scale down its dimensions to save storage space or optimize for web uploads.
 
-### Text translator
-Type or load text, choose the target language, and select Translate. Copy the translated result from the output area.
+### Text to Image
+Create visual banners or card images from text blocks. Adjust fonts, font sizing, colors, background styling, frame borders, and add custom logos/watermark overlays.
 
-### Currency converter
-Enter an amount, choose source and target currencies, and select Convert to retrieve the current conversion result.
+### Text to Speech
+Render text files or text inputs into spoken audio files. Choose speech engines, natural voices, adjustment speeds, and save outputs locally.
 
-## Weather and Wikipedia search
+## Productivity & Utilities
+
+Manage notes, links, translations, currency, weather, and reference searches.
+
+### Links Saver *(new feature)*
+Organize and store your important web URLs. Add, edit, delete, and categorize links. Featuring import and export of JSON directories (similar to the Notes Manager).
+
+### Notes Manager
+Add and edit text notes grouped under custom categories. Features JSON backup import/export. *V4.0 update:* Rename categories directly from the categories list context menu.
+
+### Audio Transcriber
+Convert spoken audio tracks into readable text transcripts. Supports *Online AI mode* (no setup required) and *Offline mode* (requires downloading local Whisper models in settings).
+
+### Voice Recorder
+Record voice memos and audio notes. Supports Mono/Stereo, sample rates (44100/48000Hz), and MP3/WAV formats. Warns you if you try to navigate back while recording is in progress.
+
+### Text Translator
+Translate paragraphs of text between a wide variety of global languages using online translation services.
+
+### Currency Converter
+Check real-time conversion rates and calculate currency conversions between dozens of world currencies.
 
 ### Weather
-Enter a city name and choose **Fetch weather info**. The results include current conditions and forecasts. The **Copy weather info** button becomes available after successful retrieval; select it to copy the displayed weather report and receive a confirmation message.
+Search real-time weather conditions and 3-day weather forecasts for any city. Features a copy button to quickly copy forecast logs.
 
-### Wikipedia search
-Enter a search term and select **Search**. Select a result and press <kbd>Enter</kbd> to open that article's summary. You can also use the result context menu to open its summary or full article.
+### Wikipedia Search
+Search Wikipedia terms and view matching lists. Open summaries, or open full wiki pages in your default browser.
 
-## Document Reader shortcuts
+## Document Reader Keyboard Shortcuts
 
-| Shortcut | Action |
+Use these keyboard shortcuts in the Document Reader window to optimize your speed and accessibility:
+
+| Shortcut | Action Description |
 |---|---|
-| <kbd>Ctrl</kbd>+<kbd>I</kbd> | Import document |
-| <kbd>Ctrl</kbd>+<kbd>W</kbd> | Close document |
-| <kbd>Ctrl</kbd>+<kbd>F</kbd> | Find |
-| <kbd>F3</kbd> / <kbd>Shift</kbd>+<kbd>F3</kbd> | Find next / previous |
-| <kbd>Ctrl</kbd>+<kbd>C</kbd> | Copy current section text |
-| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd> | Copy all text (or compare sections, depending on menu context) |
-| <kbd>Ctrl</kbd>+<kbd>B</kbd> | Bookmarks |
-| <kbd>Ctrl</kbd>+<kbd>T</kbd> | Table of contents |
-| <kbd>Ctrl</kbd>+<kbd>R</kbd> | Read aloud |
-| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>O</kbd> | OCR |
-| <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> | Export |
-| <kbd>Ctrl</kbd>+<kbd>+</kbd>, <kbd>Ctrl</kbd>+<kbd>-</kbd>, <kbd>Ctrl</kbd>+<kbd>0</kbd> | Zoom in, zoom out, reset zoom |
+| `Ctrl+I` | Import Document |
+| `Ctrl+W` | Close Active Document / Window |
+| `Ctrl+M` | View Document Properties |
+| `Ctrl+F` | Find Text |
+| `F3` | Find Next Match |
+| `Shift+F3` | Find Previous Match |
+| `Ctrl+C` | Copy Current Page / Section Text |
+| `Ctrl+Shift+C` | Copy All Text / Compare Sections |
+| `Ctrl+Shift+L` | Highlight Selection |
+| `Ctrl+Shift+V` | Split View Panel |
+| `Ctrl+Shift+O` | Run OCR Recognition |
+| `Ctrl+Shift+P` | Select Text Extraction Profile |
+| `Ctrl+R` | Read Aloud Text to Speech |
+| `Ctrl+Shift+S` | Show Reading Statistics |
+| `Ctrl+Shift+T` | Translate Current Section |
+| `Ctrl+B` | Add Bookmark |
+| `Ctrl+Shift+B` | Bookmarks Manager Window |
+| `Ctrl+T` | Show Table of Contents |
+| `Ctrl+Shift+N` | Manage Annotations |
+| `Ctrl+Shift+H` | Manage Highlights |
+| `Ctrl+G` | Go To Section Range |
+| `Alt+PageUp` | Navigate to Previous Section |
+| `Alt+PageDown` | Navigate to Next Section |
+| `Ctrl++` | Zoom In |
+| `Ctrl+-` | Zoom Out |
+| `Ctrl+0` | Reset Zoom Level |
 
-## Tips and troubleshooting
+## Tips & Troubleshooting
 
-- If a download or online feature fails, first check your internet connection and try again.
-- If an OCR language, Whisper model, Pandoc, or Edge voice is missing, use the relevant Settings tab to download or refresh it.
-- Use clear source files for best results: high-resolution images for OCR, clean audio for transcription, and well-structured documents for conversion.
-- Before using PDF editing tools, keep a backup of the original document.
-- If the application seems to retain outdated temporary data, use **Clear productivity companion cache** in Settings.
-- To enable or disable automatic update checks, use the checkbox in Settings > General.
-
-Thank you for using Productivity Companion. Feedback, feature requests, and bug reports help make future versions better.
+- **Internet dependencies:** Features like Online AI transcription, AI Assistant (with or without Web Search), Image Generator/Describer, Weather, Wikipedia, Online Translation, Edge Voice retrieval, Google TTS, Currency Converter, and update checking require a stable internet connection.
+- **Offline capabilities:** If you are working offline, utilize Offline OCR (download languages first in Settings > More) and Offline Transcription (download Whisper models in Settings > Audio transcription).
+- **PDF manipulations:** When using watermarks, splits, redacts, or deletions on PDF files, always perform the operations on a copy of the file to preserve the original.
+- **Clearing caches:** If the application feels slow or contains stale preview images/sessions, navigate to Settings > More and click **Clear productivity companion cache**.
+- **Feedback GUI:** Click **Send feedback** (or press `Alt+K`) on the main home screen to open the feedback form. Enter your suggestions and submit them directly from the app interface.
 
 ---
 
-*Productivity Companion 3.5.1 — User Guide*
+*Productivity Companion 4.0.1 — User Guide • Built with accessibility in mind.*
